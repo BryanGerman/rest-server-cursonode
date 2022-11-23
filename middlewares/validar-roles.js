@@ -1,5 +1,5 @@
 const validarRol = (req, res, next) => {
-    if(! req.usuarioAutenticado){
+    if( !req.usuarioAutenticado){
         return res.status(500).json({
             msg: "Se quiere verificar el rol son validar el token"
         })
