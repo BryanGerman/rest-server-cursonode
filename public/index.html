@@ -32,7 +32,7 @@
            // decodeJwtResponse() is a custom function defined by you
            // to decode the credential response.
            const body = {id_token: response.credential}
-           fetch(location.protocol+location.host+'/api/auth/google', {
+           fetch(location.origin+'/api/auth/google', {
             method: "POST",
             headers: {
                "Content-Type": "application/json"
